@@ -1,12 +1,10 @@
-#Step 2
 import random
-import Day_7_hangman_art 
-import Day_7_hangman_words 
-print(Day_7_hangman_art.logo)
+import Day_7_Hangman_Art 
+import Day_7_Hangman_Words 
+print(Day_7_Hangman_Art.logo)
 print("\n")
-chosen_word = random.choice(Day_7_hangman_words.word_list)
+chosen_word = random.choice(Day_7_Hangman_Words.word_list)
 
-#Testing code
 print(f'Pssst, the solution is {chosen_word}.')
 
 display = []
@@ -27,7 +25,7 @@ while end_of_the_game == False:
   else:
     life = life -1
     print(f"You guessed '{guess}', that's not in the word. You lose a life.\nYou have {life} lifes")
-    print(Day_7_hangman_art.stages[life])
+    print(Day_7_Hangman_Art.stages[life])
     
   if "_" not in display:
     end_of_the_game = True
