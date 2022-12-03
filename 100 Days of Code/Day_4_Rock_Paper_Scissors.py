@@ -1,6 +1,3 @@
-# Go to https://replit.com/@appbrewery/rock-paper-scissors-start?v=1
-import random
-
 rock = '''
     _______
 ---'   ____)
@@ -27,6 +24,7 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+import random
 
 choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
 computer = random.randint(0,2)
